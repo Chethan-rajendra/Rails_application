@@ -1,0 +1,29 @@
+
+<h2>Enter the details</h2>
+
+<%= form_for :user do |f| %>
+  <p>
+    <%= f.label :FirstName %><br>
+    <%= f.text_field :FirstName %>
+  </p>
+ 
+  <p>
+    <%= f.label :LastName%><br>
+    <%= f.text_field :LastName %>
+  </p>
+
+  <p>
+  <%= f.label :Email%><br>
+  <%= f.text_field :Email %>
+  </p>
+  <p>
+  <%= f.label :Password%><br>
+  <%= f.password_field :Password %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+
