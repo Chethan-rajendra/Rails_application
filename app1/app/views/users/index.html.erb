@@ -9,11 +9,11 @@
  
   <% @user.each do |u| %>
     <tr>
-      <td><%= u.FirstName %></td>
-      <td><%= u.LastName %></td>
-      <td><%= u.Email %></td>
+      <td><%= u.firstname %></td>
+      <td><%= u.lastname %></td>
+      <td><%= u.email %></td>
 
-      <td><%= link_to 'Edit', user_edit_path(u) %></td>
+      <td><%= link_to 'Show_profile', user_show_path(u) %></td>
       <td><%= link_to 'Delete', user_destroy_path(u), method: :delete, data: {confirm: 'are you sure?'} %></td>
     </tr>
   <% end %>

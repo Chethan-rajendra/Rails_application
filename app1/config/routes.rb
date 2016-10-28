@@ -18,6 +18,15 @@ Rails.application.routes.draw do
 
   delete '/user/:id' => "users#destroy", as: :user_destroy
 
+  # -----------------
+
+
+    get '/project/new' => "projects#new", as: :project_new
+
+    post '/project/new' => "projects#create", as: :project_create
+
+    get '/project/list' => "projects#index", as: :projects_list
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

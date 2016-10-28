@@ -8,9 +8,11 @@
     <th>Email </th>
    </tr>
    <tr>
-      <td><%= @user.FirstName %></td>
-      <td><%= @user.LastName %></td>
-      <td><%= @user.Email %></td>
+      <td><%= @user.firstname %></td>
+      <td><%= @user.lastname %></td>
+      <td><%= @user.email %></td>
+      <td><%= link_to 'Edit', user_edit_path%></td>
+      <td><%= link_to 'Add_project', project_new_path%></td>
       </tr>
 </table> 
 
